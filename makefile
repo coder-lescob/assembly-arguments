@@ -23,7 +23,7 @@ build: $(OBJS)
 	@$(AS) $(FLAGS) $(OBJS) -o $(TARGET)
 
 run: build
-	@$(TARGET)
+	@$(TARGET) $(ARGS)
 
 clean:
 	@rm -r $(BUILD)
